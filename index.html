@@ -2,75 +2,83 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Usuarios API</title>
+  <meta charset="UTF-8">
+  <title>Usuarios API</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-    <div class="container my-4">
-        <h2 class="mb-3">Gestión de Usuarios</h2>
-
-        <!-- CONTROLES -->
-        <div class="row g-2 mb-3">
-            <div class="col-md-6">
-                <input id="busqueda" class="form-control" placeholder="Búsqueda parcial por nombre">
-            </div>
-            <div class="col-md-6">
-                <select id="orden" class="form-select">
-                    <option value="id">Orden por ID</option>
-                    <option value="nombre">Orden alfabético</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- BOTONES DE LA TAREA -->
-        <div class="row g-2 mb-4">
-            <div class="col"><button class="btn btn-primary rounded-pill w-100" id="btnListar">Listar usuarios</button>
-            </div>
-            <div class="col"><button class="btn btn-primary rounded-pill w-100" id="btnBasica">Info básica</button>
-            </div>
-            <div class="col"><button class="btn btn-primary rounded-pill w-100" id="btnDireccion">Dirección</button>
-            </div>
-            <div class="col"><button class="btn btn-primary rounded-pill w-100" id="btnAvanzada">Info avanzada</button>
-            </div>
-            <div class="col"><button class="btn btn-primary rounded-pill w-100" id="btnCompanias">Compañías</button>
-            </div>
-            <div class="col"><button class="btn btn-primary rounded-pill w-100" id="btnOrdenar">Ordenar A-Z</button>
-            </div>
-        </div>
-
-        <!-- CONTENIDO -->
-        <div class="row">
-            <div class="col-md-7">
-                <table class="table table-hover">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tablaUsuarios"></tbody>
-                </table>
-            </div>
-
-            <div class="col-md-5">
-                <div id="detalle" class="detalle">
-                    <p class="text-muted">Seleccione una acción</p>
-                </div>
-            </div>
-        </div>
+  <div class="container my-4">
+    <h2 class="mb-3">Gestión de Usuarios</h2>
+    <h4 Class="mb-3">Endpoint: jsonplaceholder.typicode.com/users</h4>
+    <!-- CONTROLES -->
+    <div class="row g-2 mb-3">
+      <div class="col-md-6">
+        <input id="busqueda" class="form-control" placeholder="Búsqueda parcial por nombre">
+      </div>
+      <div class="col-md-6">
+        <select id="orden" class="form-select">
+          <option value="id">Orden por ID</option>
+          <option value="nombre">Orden alfabético</option>
+        </select>
+      </div>
     </div>
 
-    <footer class="footer">
-        <p>Curso JavaScript · XMLHttpRequest · Clases</p>
-        <p>Endpoint: jsonplaceholder.typicode.com/users</p>
-    </footer>
+    <!-- BOTONES DE LA TAREA -->
+    <div class="row g-2 mb-4">
+      <div class="col-auto"><button class="btn btn-primary rounded-pill w-80" id="btnListar">Listar
+          usuarios</button>
+      </div>
+      <div class="col-auto"><button class="btn btn-primary rounded-pill w-80" id="btnBasica">Info básica</button>
+      </div>
+      <div class="col-auto"><button class="btn btn-primary rounded-pill w-80" id="btnDireccion">Dirección</button>
+      </div>
+      <div class="col-auto"><button class="btn btn-primary rounded-pill w-80" id="btnAvanzada">Info Avanzada</button>
+      </div>
+      <div class="col-auto"><button class="btn btn-primary rounded-pill w-80" id="btnCompanias">Compañías</button>
+      </div>
+      <div class="col-auto"><button class="btn btn-primary rounded-pill w-80" id="btnOrdenar">Ordenar A-Z</button>
+      </div>
+      <div class="col-auto"><button class="btn btn-secondary rounded-pill w-80" id="btnLimpiar">Limpiar
+          Información</button>
+      </div>
+    </div>
 
-    <script src="./assets/js/app.js"></script>
+    <!-- CONTENIDO -->
+    <div class="row">
+      <div class="col-md-7">
+        <table class="table table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+            </tr>
+          </thead>
+          <tbody id="tablaUsuarios"></tbody>
+        </table>
+      </div>
+
+      <div class="col-md-5">
+        <div id="detalle" class="detalle text-center">
+          <div class="spinner-border text-primary" role="status"></div>
+          <p class="text-muted mt-2">Cargando datos...</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Curso JavaScript · XMLHttpRequest · Clases</p>
+    <p>Endpoint: jsonplaceholder.typicode.com/users</p>
+    <p>Desarrollado por Jorge Bosch | Aprendiz de Desarrollador Web </p>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
