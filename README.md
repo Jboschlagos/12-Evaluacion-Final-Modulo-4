@@ -1,36 +1,40 @@
-Gestión de Usuarios
+# Gestión de Usuarios
 
 Aplicación web para listar usuarios y visualizar información asociada de forma clara y ordenada.
 
-Funcionalidades
+---
 
-Listado de usuarios
+## 🚀 Funcionalidades
 
-Búsqueda por nombre
+- Listado de usuarios  
+- Búsqueda por nombre  
+- Ordenamiento alfabético  
+- Visualización de:
+  - Información básica  
+  - Dirección  
+  - Datos avanzados  
+  - Compañía  
+- Limpieza y organización de la información mostrada  
 
-Ordenamiento alfabético
+---
 
-Visualización de información básica, dirección, datos avanzados y compañías
+## 🛠️ Tecnologías
 
-Limpieza de información mostrada
+- HTML  
+- CSS  
+- JavaScript  
+- Bootstrap 5  
+- API pública: JSONPlaceholder  
 
-Tecnologías
+---
 
-HTML
+## 🎯 Objetivo
 
-CSS
+Practicar el consumo de una API, la manipulación del DOM y el diseño de interfaces utilizando Bootstrap.
 
-JavaScript
+---
 
-Bootstrap 5
+## 👤 Autor
 
-API pública: JSONPlaceholder
-
-Objetivo
-
-Práctica de consumo de API, manipulación del DOM y diseño de interfaz con Bootstrap.
-
-Autor
-
-Jorge Bosch
+**Jorge Bosch**  
 Aprendiz de Desarrollo Web
